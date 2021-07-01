@@ -4,7 +4,9 @@
   "description": "react app from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
     "start": "webpack serve .",
     "build": "webpack ."
   },
@@ -28,6 +30,12 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.6",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "jest": "^27.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
